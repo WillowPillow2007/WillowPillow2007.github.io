@@ -28,6 +28,10 @@ function newYear() {
 }
 
 /*Thiết Lập hàm sẽ tự động chạy lại sau 1s*/
-setInterval(function () {
+var x = setInterval(function () {
     newYear()
+    if (thoigianConLai < 0){
+        clearInterval(x);
+        alert("Chúc mừng năm mới");
+    }
 }, 1000)
