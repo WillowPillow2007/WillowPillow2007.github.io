@@ -126,7 +126,7 @@ body {
     --color4: orchid;
     --color5: plum;
     --color6: lavender;  
-    --finalSize: 40vmin;
+    --finalSize: 60vmin;
     left: 30%;
     top: 60%;
     animation-delay: -0.25s;
@@ -146,7 +146,7 @@ body {
     --color4: PaleTurquoise;
     --color5: SkyBlue;
     --color6: lavender;
-    --finalSize: 35vmin;
+    --finalSize: 55vmin;
     left: 70%;
     top: 60%;
     animation-delay: -0.4s;
@@ -165,7 +165,7 @@ body {
     --color4: #FF6A00;
     --color5: #5416B4;
     --color6: white;
-    --finalSize: 35vmin;
+    --finalSize: 70vmin;
     left: 20%;
     top: 75%;
     animation-delay: -0.4s;
@@ -184,7 +184,7 @@ body {
     --color4: #FF9F00;
     --color5: #FF4023;
     --color6: #FEC34D;  
-    --finalSize: 40vmin;
+    --finalSize: 80vmin;
     left: 90%;
     top: 45%;
     animation-delay: -0.25s;
