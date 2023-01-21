@@ -1,12 +1,11 @@
 /*Lấy thời gian tết âm lịch (mily giây)*/
-var tetAmLich = new Date(2023, 0, 22, 0, 0, 0).getTime();
- 
+var tetDuongLichTime = new Date(2023, 0, 22, 0, 0, 0).getTime();
 function newYear() {
     /*Lấy thời gian ngày hiện tại (mily giây) */
     var ngayHienTai = new Date().getTime();
 
     /*Tính thời gian còn lại (mily giây) */
-    thoigianConLai = tetAmLich - ngayHienTai;
+    thoigianConLai = tetDuongLichTime - ngayHienTai;
 
    /*Chuyển đơn vị thời gian tương ứng sang mili giây*/
     var giay = 1000;
@@ -32,6 +31,6 @@ var x = setInterval(function () {
     newYear()
     if (thoigianConLai < 0){
         clearInterval(x);
-        alert("Chúc mừng năm mới");
+        window.location.href = "firework.html";
     }
 }, 1000)
