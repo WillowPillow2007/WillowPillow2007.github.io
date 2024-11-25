@@ -261,11 +261,9 @@ h1 {
 
   h1 {
     font-size: calc(20px + 10 * (100vw - 320px) / (640 - 320));
-    position: absolute;
-    top: calc(15vh - 100 * (100vw - 320px) / (640 - 320) - 3vh);
-    left: 50vw;
-    transform: translateX(-50%);
-  }
+    float: left;
+    top: calc(5vh + 50 * (100vw - 320px) / (640 - 320));
+  }  
   
   .game-container {
     width: auto;
@@ -275,7 +273,6 @@ h1 {
   .board{
     width: auto;
     height: auto;
-    position: relative;
   }
 
   .row {
@@ -372,6 +369,24 @@ h1 {
     height: calc(40px + (10 * (100vw - 641px) / 366)); 
     font-size: calc(20px + (4 * (100vw - 641px) / 366)); 
     top: calc(5vh - (calc(30px + (10 * (100vw - 641px) / 366)) / 2)); 
+  } 
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1920px) { 
+  .game-container {
+    width: auto;
+    height: auto;
   }
-  
+  .board{
+    width: auto;
+    height: auto;
+    margin-top: calc(50px + (80 * (100vw - 1008px) / (1920 - 1008)));
+  }
+
+  #back-to-menu {
+    width: calc(150px + (30 * (100vw - 641px) / 366)); 
+    height: calc(40px + (10 * (100vw - 641px) / 366)); 
+    font-size: calc(20px + (4 * (100vw - 641px) / 366)); 
+    top: calc(5vh - (calc(30px + (10 * (100vw - 641px) / 366)) / 2)); 
+  } 
 }
